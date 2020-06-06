@@ -50,8 +50,7 @@ namespace Murbi.PainelContratante.SincronizarPassageiros
                     if (response.IsSuccessStatusCode)
                     {
                         Response.Success = true;
-                        Response.Data = retorno.Token;
-                        return this;
+                        Response.Data = retorno.Data;
                     }
 
                     Response.Errors = retorno.Message;
